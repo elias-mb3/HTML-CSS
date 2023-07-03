@@ -1,0 +1,28 @@
+
+@media (max-width: 575.98px) {
+    /*DADOS IMPORTATES*/
+    #bar-info{
+        display: none;
+    }
+    /*CABEÇARIO LOGO*/
+    #logo-menu{
+        display: flex;
+        justify-content: space-between;
+        margin: 15px;
+    }
+    #logo{
+        align-items: flex-start;
+        padding-top: 8px;
+    }
+    #menu-mobile{
+        zoom: 2;
+        color: white;
+    }
+    #card-login{
+        display: none;
+    }
+    
+}
+
+
+

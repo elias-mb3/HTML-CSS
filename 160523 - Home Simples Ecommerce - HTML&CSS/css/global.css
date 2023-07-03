@@ -1,0 +1,31 @@
+.zoom{
+    zoom: 2;
+}
+
+input[type="checkbox"]{
+    zoom: 1.4;
+}
+.form-check span.bi-star-fill,
+.card-body span.bi-star-fill{
+    font-size: 18px;
+    margin-right: -2px;
+    display: inline-block;
+}
+
+.menoszoom{
+    zoom: 0.8;
+}
+.card-body{
+    border-width: 2px;
+    margin-bottom: 20px;
+}
+.pd-card{
+    padding: 15px;
+}
+.colu{
+    flex-direction: column;
+}
+
+#bar-info{
+    display: flex;
+}
