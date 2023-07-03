@@ -1,0 +1,137 @@
+/*Font Family*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+/*Paleta de Cores*/
+:root{
+    --backgraund: #201b2c;
+    --backgraund-box: #2f2841;
+    --backgraund-input: #514869;
+    --green: #77ffc0;
+    --green2: #00ff88;
+    --input-color: #f0ffffde;
+    --placeholder: #f0ffff94;
+    --text-color: #2b134b;
+}
+body{
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+}
+body *{
+    box-sizing: border-box;
+}
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--backgraund);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.left-login > h1{
+    color: var(--green);
+    font-size: 3vw;
+}
+.left-login > img{
+    width: 35vw;
+}
+.rigth-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-box > h1{
+    color: var(--green2);
+    font-weight: 800;
+    margin: 0;
+}
+.login-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: var(--backgraund-box);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+.textfield{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: var(--backgraund-input);
+    color: var(--input-color);
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+.textfield > label{
+    color: var(--input-color);
+    margin-bottom: 10px;
+}
+.textfield > input::placeholder{
+    color: var(--placeholder);
+}
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: var(--text-color);
+    background: var(--green2);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+@media only screen and (max-width:950px){
+    .login-box{
+        width: 85%;
+    }
+}
+@media only screen and (max-width:600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login > h1{
+        display: none;
+    }
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+    .rigth-login{
+        width: 100%;
+        height: auto;
+    }
+    .left-login > img{
+        width: 50vw;
+    }
+    .login-box{
+        width: 100%;
+    }
+}
